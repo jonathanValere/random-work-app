@@ -16,7 +16,7 @@ export default function RandomCom() {
   return (
     <div>
       <p>{sujet}</p>
-      <button title="Choix du sujet" onClick={exam}>
+      <button className="" title="Choix du sujet" onClick={exam}>
         Choix du sujet
       </button>
       <button title="Choix du sujet" onClick={reset}>

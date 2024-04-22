@@ -1,7 +1,7 @@
 export default function Description() {
   return (
     <>
-      <p>
+      <p className="">
         Dans le cadre du cours Culture et Compétences Numériques, vous allez
         passer le test pratique afin de valider vos connaissances techniques.
         Vous aurez le choix entre 3 sujets (Mise en page, Présentation et
