@@ -14,14 +14,24 @@ export default function RandomCom() {
   };
 
   return (
-    <div>
-      <p>{sujet}</p>
-      <button className="" title="Choix du sujet" onClick={exam}>
-        Choix du sujet
-      </button>
-      <button title="Choix du sujet" onClick={reset}>
-        Reset
-      </button>
-    </div>
+    <>
+      <div className="flex justify-center mt-7">
+        <button
+          className="bg-sky-500 hover:bg-sky-700 p-4 mx-2 text-white uppercase rounded font-sans"
+          title="Choix du sujet"
+          onClick={exam}
+        >
+          Choix du sujet
+        </button>
+        <button
+          className="bg-zinc-400 hover:bg-zinc-700 p-4 mx-2 text-white uppercase rounded font-sans"
+          title="Choix du sujet"
+          onClick={reset}
+        >
+          Reset
+        </button>
+      </div>
+      <p className="text-3xl text-center mt-7 font-bold font-sans">{sujet}</p>
+    </>
   );
 }

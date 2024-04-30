@@ -1,20 +1,21 @@
 import "./App.css";
 import Description from "./components/Description";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 // Components ---
 import RandomCom from "./components/RandomCom";
 import Subtitle from "./components/Subtitle";
-import Title from "./components/Title";
 
 function App() {
   return (
     <div className="">
-      <Title name="Examen pratique Culture et Compétences Numériques" />
-      <Description />
-      <Subtitle
-        name={`Cliquez sur le bouton "Choix du sujet" pour connaître le sujet qui vous sera attribué`}
-      />
-      <RandomCom />
+      <Header />
+      <main className="w-5/6 m-auto">
+        <Description />
+        <RandomCom />
+      </main>
+      <Footer />
     </div>
   );
 }

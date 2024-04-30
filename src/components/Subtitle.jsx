@@ -1,3 +1,3 @@
 export default function Subtitle({ name }) {
-  return <div>{name}</div>;
+  return <p className="text-2xl my-4">{name}</p>;
 }
