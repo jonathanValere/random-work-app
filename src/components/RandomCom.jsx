@@ -20,7 +20,7 @@ export default function RandomCom() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className="bg-sky-500 hover:bg-sky-700 p-4 mx-2 text-white uppercase rounded font-sans"
+          className="bg-emerald-600 hover:bg-emerald-900 p-4 mx-2 text-white uppercase rounded font-sans"
           title="Choix du sujet"
           onClick={exam}
         >
@@ -44,7 +44,7 @@ export default function RandomCom() {
           stiffness: 260,
           damping: 20,
         }}
-        className="text-3xl text-center mt-7 font-bold font-sans"
+        className="text-4xl text-center mt-7 font-bold font-sans"
       >
         {sujet}
       </motion.p>
