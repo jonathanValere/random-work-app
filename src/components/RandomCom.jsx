@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function RandomCom() {
   const [sujet, setSujet] = useState("Votre sujet sera...");
@@ -16,22 +17,37 @@ export default function RandomCom() {
   return (
     <>
       <div className="flex justify-center mt-7">
-        <button
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="bg-sky-500 hover:bg-sky-700 p-4 mx-2 text-white uppercase rounded font-sans"
           title="Choix du sujet"
           onClick={exam}
         >
           Choix du sujet
-        </button>
-        <button
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className="bg-zinc-400 hover:bg-zinc-700 p-4 mx-2 text-white uppercase rounded font-sans"
-          title="Choix du sujet"
+          title="Remettre à zéro"
           onClick={reset}
         >
           Reset
-        </button>
+        </motion.button>
       </div>
-      <p className="text-3xl text-center mt-7 font-bold font-sans">{sujet}</p>
+      <motion.p
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+        className="text-3xl text-center mt-7 font-bold font-sans"
+      >
+        {sujet}
+      </motion.p>
     </>
   );
 }
