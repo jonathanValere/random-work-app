@@ -44,7 +44,7 @@ export default function RandomCom() {
           stiffness: 260,
           damping: 20,
         }}
-        className="text-4xl text-center mt-7 mb-36 font-bold font-sans"
+        className="text-4xl text-center mt-7 mb-40 font-bold font-sans"
       >
         {sujet}
       </motion.p>

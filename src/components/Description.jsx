@@ -5,7 +5,7 @@ export default function Description() {
     <div className="text-xl leading-8 py-8 font-sans flex gap-10">
       <img className="" src={ImgTest} width={230} />
       <div>
-        <p className="my-4">
+        <p className="my-4 mt-36">
           Dans le cadre du cours Culture et Compétences Numériques, vous allez
           passer une évaluation pratique afin de valider vos connaissances
           techniques. Vous aurez le choix entre 3 sujets (
